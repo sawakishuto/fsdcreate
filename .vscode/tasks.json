@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "【提出用ZIPファイルの作成】",
+      "type": "shell",
+      "windows": {
+        "options": {
+          "shell": {
+            "executable": "${env:SystemRoot}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": ["-ExecutionPolicy", "Bypass"]
+          },
+        },
+        "command":  "${workspaceFolder}\\.vscode\\create-zip.ps1 -DestinationPath \"\\\"${workspaceFolderBasename}_$(Get-Date -UFormat %y%m%d%H%M%S)\\\"\" -SourcePath ${workspaceFolder}"
+      },
+      "osx": {
+        "options": {
+          "shell": {
+            "executable": "/bin/bash",
+            "args": ["-c"]
+          }
+        },
+        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x \"*.zip\" \"*.DS_Store\""
+      },
+      "linux": {
+        "options": {
+          "shell": {
+            "executable": "/bin/bash",
+            "args": ["-c"]
+          }
+        },
+        "command": "zip -X -r ${workspaceFolderBasename}_`date +\"%y%m%d%H%M%S\"`.zip . -x *.zip"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
