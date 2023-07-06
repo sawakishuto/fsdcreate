@@ -74,10 +74,10 @@ html.addEventListener('click',()=>{
   slidename4.classList.add("slider")
   setTimeout(  function slideout(){
     slide1.classList.add("out")
-  },900)
+  },1500)
   setTimeout(  function slideout(){
     slide2.classList.add("out")
-  },  900)
+  },  1500)
 })
 hanb.addEventListener('click',()=>{
  

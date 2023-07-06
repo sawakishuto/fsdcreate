@@ -8,5 +8,6 @@
   ],
   "emmet.preferences": {
     "output.inlineBreak": 1
-  }
+  },
+  "liveServer.settings.port": 5501
 }
