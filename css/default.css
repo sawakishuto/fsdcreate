@@ -82,6 +82,7 @@ scale: 0;
 
 
 }
+
 .slidename2{
   animation-fill-mode: forwards;
 
@@ -325,11 +326,14 @@ a{
   color: black;
 
 }
+
+
 .kennkyushoukai{
 
   display: block;
 padding-top: 20px;
 padding-bottom: 0px;
+transition-duration: 0.3s;
 
 }
 .kyouinshoukai{
@@ -337,16 +341,19 @@ padding-bottom: 0px;
   margin-top: 0px;
   padding-bottom:0px;
   padding-bottom: 20px;
+  transition-duration: 0.3s;
 
 
 }
 .kennkyushoukai:hover{
 opacity: 0.5;
-transition-duration: 0.2s;
+transition-duration: 0.3s;
+scale: 1.1;
 }
 .kyouinshoukai:hover{
   opacity: 0.5;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
+  scale: 1.1;
   }
 .back{
   top: 20%;
@@ -626,7 +633,7 @@ opacity: 1;
   width: 0%;
   background-color: rgba(133, 212, 255, 0.575);
   position: absolute;
-  top: 1040px;
+  top: 1070px;
   font-size: 30px;
   padding-left:20px ;
   padding-top: 30px;
@@ -648,7 +655,7 @@ opacity: 1;
   width: 60%;
   background-color: rgba(133, 212, 255, 0.575);
   position: absolute;
-  top: 1040px;
+  top: 1070px;
   font-size: 30px;
   padding-left:20px ;
   padding-top: 30px;
@@ -671,4 +678,17 @@ opacity: 1;
   }
 }
 
+.bunnkenn{
+  position: relative
+  ;
+  padding: 40px 40px
+  ;top: 2000px;
+  left: 20%;
+  background-color: white;
+
+  border-radius: 30px;
+  border: 2px black solid;
+  box-shadow: 3px 3px 3px rgb(166, 166, 166);
+  width: 60%;
+}
 
